@@ -13,14 +13,15 @@ class RouteServiceProvider extends ServiceProvider
     /**
      * The path to the "home" route for your application.
      *
-     * Typically, users are redirected here after authentication.
+     * This is used by Laravel authentication to redirect users after login.
      *
      * @var string
      */
-    public const HOME = '/home';
+
+    protected $namespace = 'App\Http\Controllers';
 
     /**
-     * Define your route model bindings, pattern filters, and other route configuration.
+     * Define your route model bindings, pattern filters, etc.
      *
      * @return void
      */
@@ -29,13 +30,31 @@ class RouteServiceProvider extends ServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
-            Route::middleware('api')
-                ->prefix('api')
-                ->group(base_path('routes/api.php'));
+            Route::namespace($this->namespace)->group(function(){
+                Route::middleware(['web','maintenance'])
+                    ->namespace('Gateway')
+                    ->prefix('ipn')
+                    ->name('ipn.')
+                    ->group(base_path('routes/ipn.php'));
 
-            Route::middleware('web')
-                ->group(base_path('routes/web.php'));
+                Route::middleware(['web'])
+                    ->namespace('Admin')
+                    ->prefix('admin')
+                    ->name('admin.')
+                    ->group(base_path('routes/admin.php'));
+
+                Route::middleware(['web','maintenance'])
+                    ->prefix('user')
+                    ->group(base_path('routes/user.php'));
+
+                Route::middleware(['web','maintenance'])
+                    ->group(base_path('routes/web.php'));
+
+            });
+
         });
+
+        Route::get('maintenance-mode','App\Http\Controllers\SiteController@maintenance')->name('maintenance');
     }
 
     /**
