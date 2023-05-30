@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0909e90d60a5d7984f818cb1186ea849",
+    "content-hash": "357975db7a1377cddcf5e273efafa877",
     "packages": [
         {
             "name": "authorizenet/authorizenet",
@@ -1461,50 +1461,6 @@
                 }
             ],
             "time": "2023-04-17T15:44:17+00:00"
-        },
-        {
-            "name": "laramin/utility",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kbzaman76/utility.git",
-                "reference": "92262547885587e874279a07309b73cfc11ee15b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kbzaman76/utility/zipball/92262547885587e874279a07309b73cfc11ee15b",
-                "reference": "92262547885587e874279a07309b73cfc11ee15b",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laramin\\Utility\\UtilityServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laramin\\Utility\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "laramin"
-                }
-            ],
-            "description": "Utility services for application.",
-            "support": {
-                "issues": "https://github.com/kbzaman76/utility/issues",
-                "source": "https://github.com/kbzaman76/utility/tree/main"
-            },
-            "time": "2022-07-25T13:47:49+00:00"
         },
         {
             "name": "laravel/framework",
@@ -9980,7 +9936,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "laramin/utility": 20,
         "textmagic/sdk": 20
     },
     "prefer-stable": true,

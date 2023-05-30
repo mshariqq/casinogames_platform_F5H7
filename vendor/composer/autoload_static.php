@@ -171,7 +171,6 @@ class ComposerStaticInit89871f28ffa816193960dc3bf3dc136f
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
-            'Laramin\\Utility\\' => 16,
             'Laminas\\Diactoros\\' => 18,
         ),
         'I' => 
@@ -559,10 +558,6 @@ class ComposerStaticInit89871f28ffa816193960dc3bf3dc136f
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
-        'Laramin\\Utility\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laramin/utility/src',
-        ),
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
@@ -721,6 +716,7 @@ class ComposerStaticInit89871f28ffa816193960dc3bf3dc136f
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\GeneralSetting' => __DIR__ . '/../..' . '/app/Models/GeneralSetting.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -3418,13 +3414,6 @@ class ComposerStaticInit89871f28ffa816193960dc3bf3dc136f
         'Laminas\\Diactoros\\UploadedFileFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/UploadedFileFactory.php',
         'Laminas\\Diactoros\\Uri' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/Uri.php',
         'Laminas\\Diactoros\\UriFactory' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/UriFactory.php',
-        'Laramin\\Utility\\Controller\\UtilityController' => __DIR__ . '/..' . '/laramin/utility/src/Controller/UtilityController.php',
-        'Laramin\\Utility\\GoToCore' => __DIR__ . '/..' . '/laramin/utility/src/GoToCore.php',
-        'Laramin\\Utility\\Helpmate' => __DIR__ . '/..' . '/laramin/utility/src/Helpmate.php',
-        'Laramin\\Utility\\Onumoti' => __DIR__ . '/..' . '/laramin/utility/src/Onumoti.php',
-        'Laramin\\Utility\\Utility' => __DIR__ . '/..' . '/laramin/utility/src/Utility.php',
-        'Laramin\\Utility\\UtilityServiceProvider' => __DIR__ . '/..' . '/laramin/utility/src/UtilityServiceProvider.php',
-        'Laramin\\Utility\\VugiChugi' => __DIR__ . '/..' . '/laramin/utility/src/VugiChugi.php',
         'Laravel\\Sail\\Console\\AddCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/AddCommand.php',
         'Laravel\\Sail\\Console\\Concerns\\InteractsWithDockerComposeServices' => __DIR__ . '/..' . '/laravel/sail/src/Console/Concerns/InteractsWithDockerComposeServices.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',

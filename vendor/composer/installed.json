@@ -1936,53 +1936,6 @@
             "install-path": "../laminas/laminas-diactoros"
         },
         {
-            "name": "laramin/utility",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kbzaman76/utility.git",
-                "reference": "92262547885587e874279a07309b73cfc11ee15b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kbzaman76/utility/zipball/92262547885587e874279a07309b73cfc11ee15b",
-                "reference": "92262547885587e874279a07309b73cfc11ee15b",
-                "shasum": ""
-            },
-            "time": "2022-07-25T13:47:49+00:00",
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laramin\\Utility\\UtilityServiceProvider"
-                    ]
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Laramin\\Utility\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "laramin"
-                }
-            ],
-            "description": "Utility services for application.",
-            "support": {
-                "issues": "https://github.com/kbzaman76/utility/issues",
-                "source": "https://github.com/kbzaman76/utility/tree/main"
-            },
-            "install-path": "../laramin/utility"
-        },
-        {
             "name": "laravel/framework",
             "version": "v9.52.7",
             "version_normalized": "9.52.7.0",

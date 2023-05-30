@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-p1',
+        'version' => 'dev-p1',
+        'reference' => '222e44aa17354118999a0f29a914453a09754cbd',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -445,17 +445,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'laramin/utility' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '92262547885587e874279a07309b73cfc11ee15b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../laramin/utility',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'dev_requirement' => false,
-        ),
         'laravel/framework' => array(
             'pretty_version' => 'v9.52.7',
             'version' => '9.52.7.0',
@@ -466,9 +455,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-p1',
+            'version' => 'dev-p1',
+            'reference' => '222e44aa17354118999a0f29a914453a09754cbd',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -10,7 +10,6 @@
         "ezyang/htmlpurifier": "^4.13",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.5",
-        "laramin/utility": "dev-main",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
