@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-use Laramin\Utility\Onumoti;
+// use Laramin\Utility\Onumoti;
 
 class LoginController extends Controller
 {
@@ -45,7 +45,7 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        $pageTitle = "Admin Login";
+        $pageTitle = "Login for Admin Panel";
         return view('admin.auth.login', compact('pageTitle'));
     }
 
@@ -77,11 +77,12 @@ class LoginController extends Controller
         }
 
 
-        Onumoti::getData();
+        // Onumoti::getData();
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
         // the login attempts for this application. We'll key this by the username and
         // the IP address of the client making these requests into this application.
+        
         if (method_exists($this, 'hasTooManyLoginAttempts') &&
             $this->hasTooManyLoginAttempts($request)) {
             $this->fireLockoutEvent($request);
