@@ -22,7 +22,7 @@ class AdminController extends Controller {
 
     public function dashboard() {
 
-        $pageTitle = 'Dashboard';
+        $pageTitle = 'Admin Dashboard';
 
         // User Info
         $widget['total_users']             = User::count();

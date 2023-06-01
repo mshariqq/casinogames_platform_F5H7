@@ -28,7 +28,12 @@ class SiteController extends Controller {
 
         $pageTitle = 'Home';
         $sections  = Page::where('tempname', $this->activeTemplate)->where('slug', '/')->first();
-        dd("Welcome, Front end is still in development");
+
+
+        echo "<h4>Front end is not ready, please go to ADMIN PANEL </h4>";
+        echo "<br>";
+        echo "<a href='".url('/admin')."'>Click here</a>";
+        dd("Development by SHARIQQ.COM");
         return view($this->activeTemplate . 'home', compact('pageTitle', 'sections'));
     }
 
